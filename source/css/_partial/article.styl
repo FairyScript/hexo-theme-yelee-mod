@@ -10,8 +10,13 @@
 .article {
   margin: 30px;
   margin-bottom: 5px;
+  border-radius: 4px;
   position: relative;
-  background: article-color;
+  /* 毛玻璃 */
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  /* End */
+  background: rgba(238, 238, 238, 0.78);
   -webkit-transition: all 0.2s ease-in;
   &.show{
     visibility: visible;
@@ -125,7 +130,8 @@
 }
 .article-header{
   border-left: 6px solid #eee;
-  padding: 15px 8.2em 15px 25px;
+  margin-left: 5px;
+  padding: 15px 8.2em 15px 20px;
   &:hover {
     border-left: 5px solid #9c9;
   };
@@ -196,6 +202,7 @@
     empty-cells:show;
     tr,td{
       height:35px;
+      border-radius: 3px;
     }
     th {
       font-weight: bold;
@@ -245,7 +252,7 @@
     text-align right
     z-index 1
     time
-        color #aaa
+        color rgb(105, 105, 105)
         float right
         &:before
             margin-top 0px
@@ -295,6 +302,7 @@
 #article-nav {
     display: table;
     width: 100%;
+    border-radius: 4px;
     height: 2.5em;
     margin: 1em auto;
     font-size 1rem
