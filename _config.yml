@@ -173,6 +173,10 @@ limit_article_width:
   on: false
   max_width: 60 # em
 
+# Use frosted glass effect | 开启毛玻璃效果
+article_blur:
+  on: true
+
 # >>> Small features | 小功能设置 <<<
 
 # 是否开启边栏多标签切换
