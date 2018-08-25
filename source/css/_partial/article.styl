@@ -6,16 +6,17 @@
     margin-bottom 126px
     overflow hidden
 
+.article 
+  if hexo-config("article_blur.on")
+    -webkit-backdrop-filter: blur(15px)
+    backdrop-filter: blur(15px)
 
 .article {
   margin: 30px;
   margin-bottom: 5px;
   border-radius: 4px;
   position: relative;
-  /* 毛玻璃 */
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
-  /* End */
+
   background: rgba(238, 238, 238, 0.78);
   -webkit-transition: all 0.2s ease-in;
   &.show{
